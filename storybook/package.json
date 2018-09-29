@@ -1,0 +1,20 @@
+{
+  "name": "styled-jsx-storybook",
+  "version": "1.0.0",
+  "description": "styled-jsx with Storybook test",
+  "author": "Ryan Fitzer",
+  "license": "UNLICENSED",
+  "scripts": {
+    "sb": "start-storybook -p 4000 -c ./"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.4.11",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-module-resolver": "^3.1.1"
+  }
+}
