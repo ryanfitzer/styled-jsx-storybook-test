@@ -4,21 +4,13 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
-                include: path.resolve( __dirname, '../' ),
-                use: [
-                    {
-                        loader: require( 'styled-jsx/webpack' ).loader
-                    }
-                ]
-            },
-            {
-                test: /\.jsx?$/,
+                test: /\.(jsx?|css)$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 options: {
                     root: '../',
                     plugins: [
+                        'styled-jsx/babel',
                         // https://github.com/tleunen/babel-plugin-module-resolver#readme
                         [ 'module-resolver',
                             {
@@ -33,6 +25,15 @@ module.exports = {
                         ]
                     ]
                 }
+            },
+            {
+                test: /\.css$/,
+                include: path.resolve( __dirname, '../' ),
+                use: [
+                    {
+                        loader: require( 'styled-jsx/webpack' ).loader
+                    }
+                ]
             }
         ]
     }

@@ -28,7 +28,7 @@ const Nav = () => (
         ))}
       </ul>
     </ul>
-    <style jsx global>{ css }</style>
+    <style jsx>{ css }</style>
     <style jsx>{`
       :global(body) {
         margin: 0;
