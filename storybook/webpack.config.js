@@ -10,7 +10,6 @@ module.exports = {
                 options: {
                     root: '../',
                     plugins: [
-                        'styled-jsx/babel',
                         // https://github.com/tleunen/babel-plugin-module-resolver#readme
                         [ 'module-resolver',
                             {
